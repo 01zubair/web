@@ -1,0 +1,205 @@
+html,
+body {
+    place-items: center;
+    font-family: var(--font-family);
+    background: linear-gradient(to right, #363062, #435585, #818FB4);
+
+    overflow: hidden;
+}
+
+#taskForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 800px;
+    /* Adjust the width as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px 15px;
+    /* Adjust the padding to make it thinner and wider */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-family: 'Roboto mono', monospace;
+}
+
+#taskForm button {
+    background-color: #F5E8C7;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Roboto mono', monospace;
+}
+
+#taskForm button:hover {
+    box-shadow: 200 20 200px rgba(0, 0, 0, 0.25);
+}
+
+
+
+h1,
+h2 {
+    margin-top: 30px;
+    font-family: 'Roboto mono', monospace;
+    color: #000000;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 60px;
+}
+
+p,
+a {
+    color: #a0a0a0;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    background: linear-gradient(to right, #435585, #818FB4, #c4baa1);
+    padding: 10px;
+    margin: 5px auto;
+    /* Center horizontally */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    /* Adjust the max-width based on your preference */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#taskList li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+
+
+#taskForm,
+#submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    border-radius: 100px;
+
+
+
+
+}
+
+
+#logoutLink1 {
+    background: #F5E8C7;
+    border: 0;
+    border-radius: 5px;
+    color: #070707;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto mono', monospace;
+    font-size: 11px;
+    /* Adjusted font size */
+    font-weight: 500;
+    line-height: 2.5;
+    padding: 3px 10px;
+    /* Adjusted padding */
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container1 {
+    position: fixed;
+    top: 30%;
+    /* Adjust the top position as needed */
+    left: 6.5%;
+    transform: translateX(-50%);
+
+
+}
+
+
+
+.pomo {
+    margin-bottom: 20px;
+    /* Adjust the margin-bottom as needed */
+}
+
+.timer-display {
+    font-size: 30px;
+    width: 210px;
+    height: 62px;
+    background: #ffffff;
+    position: relative;
+    left: 1%;
+    font-family: 'Roboto mono', monospace;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(65, 5, 145, 0.25);
+}
+
+/* Rest of your CSS styles */
+.buttons1 {
+    width: 210px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.buttons1 button {
+    flex: 1;
+    max-width: 100px;
+    height: 30px;
+    background-color: #818FB4;
+    color: #000000;
+    border: none;
+    font-family: 'Roboto mono', monospace;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons1 button:nth-last-child(2) {
+    background-color: #e35209;
+}
+
+.buttons1 button:nth-last-child(1) {
+    background-color: #F5E8C7;
+}
+
+.buttons1 button:hover {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.25);
+}
