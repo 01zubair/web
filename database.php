@@ -7,8 +7,11 @@ $password = "new_password";
 
 $mysqli = new mysqli($host, $username, $password, $dbname, $port);
 
-if ($mysqli->connect_errno) {
-    die("connection error: " . $mysqli->connect_error);
+// Check connection
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
 }
 
-return $mysqli;
+echo "Connected successfully"; // You can remove this line once the connection is successful
+
+// Note: Avoid using 'return' unless you are in a function
